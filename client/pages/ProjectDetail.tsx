@@ -133,7 +133,7 @@ export default function ProjectDetail() {
                   >
                     {tech}
                   </span>
-                )
+                ),
               )}
             </div>
           </div>
