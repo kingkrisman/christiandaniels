@@ -11,6 +11,7 @@ export default function ProjectCard({
   id,
   title,
   description,
+  image,
 }: ProjectCardProps) {
   return (
     <Link
@@ -19,7 +20,19 @@ export default function ProjectCard({
     >
       <div className="px-5 pt-5 pb-4 rounded-[20px] group">
         <div className="relative w-full h-[200px] border border-black/10 rounded-[20px] overflow-hidden bg-gradient-to-br from-slate-300 to-slate-400">
-          <div className="w-full h-full"></div>
+          <div
+            className="w-full h-full"
+            style={
+              image
+                ? {
+                    backgroundImage: `url(${image})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                  }
+                : undefined
+            }
+          ></div>
         </div>
       </div>
       <div className="px-7 pb-7">
