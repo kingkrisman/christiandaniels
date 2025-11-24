@@ -70,6 +70,7 @@ export default function ProjectsPage() {
                 id={project.id}
                 title={project.title}
                 description={project.description}
+                image={project.image}
               />
             ))}
           </div>
