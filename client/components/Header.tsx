@@ -24,7 +24,7 @@ export default function Header() {
                 <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                 <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               </svg>
-              <span className="absolute -bottom-12 left-1/2 -translate-x-1/2 px-3 py-1 bg-zinc-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-black text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
                 Home
               </span>
             </Link>
@@ -36,7 +36,8 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-[15px] hover:px-[20px] hover:mr-1 text-zinc-600 hover:text-zinc-900 relative group transition-all duration-300 hover:bg-gray-200/20 rounded-[15px]"
-              href="https://x.com/@honour_can_code"
+              href="https://x.com"
+              title="Twitter"
             >
               <svg
                 stroke="currentColor"
@@ -49,8 +50,8 @@ export default function Header() {
               >
                 <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path>
               </svg>
-              <span className="absolute -bottom-12 left-1/2 -translate-x-1/2 px-3 py-1 bg-zinc-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
-                Twitter
+              <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-black text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                Visit Twitter
               </span>
             </a>
           </div>
@@ -60,7 +61,8 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-[15px] hover:px-[20px] hover:mr-1 text-zinc-600 hover:text-zinc-900 relative group transition-all duration-300 hover:bg-gray-200/20 rounded-[15px]"
-              href="https://github.com/ikwerre-dev"
+              href="https://github.com"
+              title="GitHub"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +78,8 @@ export default function Header() {
                 <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
                 <path d="M9 18c-4.51 2-5-2-7-2"></path>
               </svg>
-              <span className="absolute -bottom-12 left-1/2 -translate-x-1/2 px-3 py-1 bg-zinc-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
-                Github
+              <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-black text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                Visit GitHub
               </span>
             </a>
           </div>
@@ -107,8 +109,8 @@ export default function Header() {
                 <path d="M16 13H8"></path>
                 <path d="M16 17H8"></path>
               </svg>
-              <span className="absolute -bottom-12 left-1/2 -translate-x-1/2 px-3 py-1 bg-zinc-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
-                Resume
+              <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-black text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                Download Resume
               </span>
             </a>
             <div className="h-5 w-[1px] bg-zinc-200 md:mx-2"></div>
