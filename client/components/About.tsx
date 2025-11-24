@@ -7,25 +7,11 @@ export default function About() {
 
       <div className="flex flex-col gap-6">
         <p className="text-[16px] font-normal md:leading-relaxed text-gray-600">
-          I like to craft solid and scalable products with exceptional user
-          experiences, focusing on innovation and problem-solving across
-          various industries.
+          I'm a passionate Full Stack Developer with a keen eye for creating digital experiences that make a difference. With expertise spanning both frontend and backend technologies, I specialize in building scalable, user-centric applications that solve real-world problems.
         </p>
 
         <p className="text-[16px] font-normal md:leading-relaxed text-gray-600">
-          I'm Christian Daniels, a 19-year-old Nigerian software developer, with
-          7.5+ years of experience in web development, app development,
-          robotics, cloud computing, and game development. I specialize in
-          building robust applications, cloud platforms, and cutting-edge
-          robotics solutions.
-        </p>
-
-        <p className="text-[16px] font-normal md:leading-relaxed text-gray-600">
-          A self-taught programmer, ranked among the top programmers in Port
-          Harcourt, Nigeria, I am an active tech content creator, speaker, and
-          mentor passionate about empowering others in tech. I'm also the CEO
-          and founder of Pxxl App, a cloud deployment platform for websites,
-          APIs, and databases.
+          My journey in web development started with curiosity and has evolved into a professional pursuit of excellence. I believe in writing clean, efficient code and creating interfaces that are not just functional, but delightful to use.
         </p>
 
         <div className="relative w-full h-[250px] mt-8 group">
