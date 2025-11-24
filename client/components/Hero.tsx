@@ -6,9 +6,9 @@ export default function Hero() {
       <div className="animate-fade-in">
         <img
           alt="Profile picture"
-          width="100"
-          height="100"
-          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect fill='%23e5e7eb' width='100' height='100' rx='50'/%3E%3C/svg%3E"
+          width="160"
+          height="160"
+          src="https://cdn.builder.io/api/v1/image/assets%2F25254e0e171d4040bc8cd6eb90b06e01%2F93bb4c175aaa4f2f86e886b328f0409a"
           className="rounded-full aspect-square"
         />
       </div>
