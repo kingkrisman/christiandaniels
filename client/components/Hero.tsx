@@ -9,7 +9,7 @@ export default function Hero() {
           width="160"
           height="160"
           src="https://cdn.builder.io/api/v1/image/assets%2F25254e0e171d4040bc8cd6eb90b06e01%2F93bb4c175aaa4f2f86e886b328f0409a"
-          className="rounded-full aspect-square"
+          className="rounded-full aspect-square object-cover"
         />
       </div>
 
