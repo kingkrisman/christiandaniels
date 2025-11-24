@@ -5,9 +5,11 @@ import Footer from "@/components/Footer";
 const allProjects = [
   {
     id: "pxxl",
-    title: "Pxxl App",
+    title: "Da'Sayonce Real Estate",
     description:
-      "Enterprise-grade cloud deployment platform enabling instant deployment of websites, APIs, and databases with zero configuration",
+      "Leading development of complex web applications using modern tech stack. Specializing in React, Node.js, and cloud solutions",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F25254e0e171d4040bc8cd6eb90b06e01%2Fef216b9c1dda4ceeb1e20d9d326adf02",
   },
   {
     id: "olamide",
