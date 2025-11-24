@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className="text-start">
         <h1 className="text-[26px] md:text-[42px] font-bold tracking-tight leading-tight text-black mb-2">
-          Hey, I'm Robinson.
+          Hey, I'm Christian.
         </h1>
         <h2 className="text-[26px] md:text-[42px] font-bold tracking-tight leading-tight text-black">
           Software Engineer

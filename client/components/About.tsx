@@ -13,7 +13,7 @@ export default function About() {
         </p>
 
         <p className="text-[16px] font-normal md:leading-relaxed text-gray-600">
-          I'm Robinson Honour, a 19-year-old Nigerian software developer, with
+          I'm Christian Daniels, a 19-year-old Nigerian software developer, with
           7.5+ years of experience in web development, app development,
           robotics, cloud computing, and game development. I specialize in
           building robust applications, cloud platforms, and cutting-edge

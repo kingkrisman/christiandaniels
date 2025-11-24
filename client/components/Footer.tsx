@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="w-full max-w-[53rem] p-6 flex flex-col py-[58px] px-[1.5rem] md:px-[8rem] items-center gap-[25px]">
       <div className="w-full max-w-[53rem] py-[40px] flex flex-col items-center gap-[16px] border-t border-gray-300">
         <p className="text-[14px] text-center text-gray-600">
-          Copyright © 2025 Robinson Honour.
+          Copyright © 2025 Christian Daniels.
         </p>
         <div className="flex gap-6 py-1">
           <a
