@@ -25,7 +25,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="text-gray-600 cursor-pointer hover:text-black transition-all"
+            className="text-gray-600 dark:text-gray-400 cursor-pointer hover:text-black dark:hover:text-white transition-all"
             href="https://www.instagram.com/codewithhonour"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +47,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="text-gray-600 cursor-pointer hover:text-black transition-all"
+            className="text-gray-600 dark:text-gray-400 cursor-pointer hover:text-black dark:hover:text-white transition-all"
             href="https://github.com/ikwerre-dev"
             target="_blank"
             rel="noopener noreferrer"
@@ -68,7 +68,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="text-gray-600 cursor-pointer hover:text-black transition-all"
+            className="text-gray-600 dark:text-gray-400 cursor-pointer hover:text-black dark:hover:text-white transition-all"
             href="mailto:codewithhonour@gmail.com"
           >
             <svg
