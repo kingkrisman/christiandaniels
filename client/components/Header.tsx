@@ -116,12 +116,59 @@ export default function Header() {
                 Download Resume
               </span>
             </a>
-            <div className="h-5 w-[1px] bg-zinc-200 md:mx-2"></div>
+            <div className="h-5 w-[1px] bg-zinc-200 dark:bg-zinc-800 md:mx-2"></div>
           </div>
 
+          <button
+            onClick={toggleTheme}
+            className="p-[15px] hover:px-[20px] hover:mr-1 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white relative group transition-all duration-300 hover:bg-gray-200/20 dark:hover:bg-white/10 rounded-[15px]"
+            title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+          >
+            {theme === "light" ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            )}
+            <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              {theme === "light" ? "Dark mode" : "Light mode"}
+            </span>
+          </button>
+
           <Link
-            to="/"
-            className="bg-black text-white py-[14px] px-[20px] md:px-[22px] rounded-[14px] text-sm hover:opacity-90 duration-300 transition-all hover:px-[28px] ml-2 md:ml-1"
+            to="/blog"
+            className="bg-black dark:bg-white text-white dark:text-black py-[14px] px-[20px] md:px-[22px] rounded-[14px] text-sm hover:opacity-90 duration-300 transition-all hover:px-[28px] ml-2 md:ml-1"
           >
             <span className="hidden md:flex">My Blog</span>
             <span className="md:hidden">Blog</span>
