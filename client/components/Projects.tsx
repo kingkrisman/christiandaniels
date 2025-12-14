@@ -43,22 +43,22 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="w-full max-w-[53rem] flex flex-col pt-[58px] px-[1.5rem] items-center gap-[25px] md:gap-[25px]">
+    <div className="w-full max-w-[53rem] flex flex-col pt-[58px] px-[1.5rem] items-center gap-[25px] md:gap-[25px] bg-white dark:bg-black transition-colors">
       <div className="flex items-center gap-2 mb-8">
-        <h2 className="text-[32px] text-center font-bold tracking-tight leading-tight text-black">
+        <h2 className="text-[32px] text-center font-bold tracking-tight leading-tight text-black dark:text-white transition-colors">
           Here's What I've Been Up To.
         </h2>
       </div>
 
       {loading && (
         <div className="w-full text-center py-12">
-          <p className="text-gray-500">Loading projects...</p>
+          <p className="text-gray-500 dark:text-gray-500">Loading projects...</p>
         </div>
       )}
 
       {error && (
         <div className="w-full text-center py-12">
-          <p className="text-red-500">
+          <p className="text-red-500 dark:text-red-500">
             Failed to load projects. Please try again later.
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function Projects() {
 
       {!loading && !error && projects.length === 0 && (
         <div className="w-full text-center py-12">
-          <p className="text-gray-500">No starred projects found.</p>
+          <p className="text-gray-500 dark:text-gray-500">No starred projects found.</p>
         </div>
       )}
 
