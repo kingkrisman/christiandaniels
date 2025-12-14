@@ -102,7 +102,7 @@ export default function Projects() {
 
           <div className="col-span-1 md:col-span-2 w-full flex justify-center">
             <Link to="/projects">
-              <button className="mt-4 bg-black hover:bg-gray-900 flex items-center rounded-[14px] px-[24px] py-[14px] text-[16px] font-normal text-white text-start no-underline transition-all duration-500 group">
+              <button className="mt-4 bg-black dark:bg-white hover:bg-gray-900 dark:hover:bg-gray-200 flex items-center rounded-[14px] px-[24px] py-[14px] text-[16px] font-normal text-white dark:text-black text-start no-underline transition-all duration-500 group">
                 <span className="flex items-center group-hover:pr-2 font-medium text-[16px] transition-all duration-300">
                   View All
                 </span>
