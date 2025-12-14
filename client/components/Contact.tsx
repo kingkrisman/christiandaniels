@@ -80,12 +80,12 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="w-full max-w-[53rem] p-6 flex flex-col py-[58px] px-[1.5rem] md:px-[8rem] items-center gap-[25px]">
+      <div className="w-full max-w-[53rem] p-6 flex flex-col py-[58px] px-[1.5rem] md:px-[8rem] items-center gap-[25px] bg-white dark:bg-black transition-colors">
         <div className="w-full max-w-[53rem] flex flex-col py-[58px] items-start">
-          <h2 className="text-[32px] font-bold tracking-tight leading-tight text-black mb-[16px]">
+          <h2 className="text-[32px] font-bold tracking-tight leading-tight text-black dark:text-white mb-[16px] transition-colors">
             Get in touch
           </h2>
-          <p className="text-[16px] font-normal leading-relaxed text-gray-600 mb-[32px] max-w-[600px]">
+          <p className="text-[16px] font-normal leading-relaxed text-gray-600 dark:text-gray-400 mb-[32px] max-w-[600px] transition-colors">
             I'm always interested in exploring new opportunities, collaborating,
             or exchanging ideas with like-minded individuals. Feel free to book
             a call or email me if you'd like to see my portfolio deck or to
