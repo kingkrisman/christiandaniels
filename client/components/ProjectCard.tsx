@@ -19,6 +19,7 @@ export default function ProjectCard({
   url,
   language,
   stars,
+  gradientClass,
 }: ProjectCardProps) {
   const linkHref = url || `/projects/${id}`;
   const isExternalLink = url ? true : false;
