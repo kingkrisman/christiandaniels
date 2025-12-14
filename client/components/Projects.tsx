@@ -73,7 +73,7 @@ export default function Projects() {
       {!loading && !error && projects.length > 0 && (
         <div className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {projects.map((project) => {
-            const screenshotUrl = `https://urlbox.io/api/render/png?url=${encodeURIComponent(project.html_url)}&width=600&height=400&quality=80`;
+            const screenshotUrl = `https://cdn.microlink.io/?url=${encodeURIComponent(project.html_url)}&screenshot=true&type=png&width=600&height=400`;
             return (
               <ProjectCard
                 key={project.id}
