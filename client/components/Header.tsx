@@ -92,7 +92,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="p-[15px] hover:px-[20px] hover:mr-1 text-zinc-600 hover:text-zinc-900 relative group transition-all duration-300 hover:bg-gray-200/20 rounded-[15px]"
+              className="p-[15px] hover:px-[20px] hover:mr-1 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white relative group transition-all duration-300 hover:bg-gray-200/20 dark:hover:bg-white/10 rounded-[15px]"
               href="/resume.pdf"
             >
               <svg
