@@ -98,7 +98,7 @@ export default function Contact() {
                 type="text"
                 placeholder="Full Name"
                 required
-                className="flex-1 bg-gray-100 border-[1px] border-black/10 rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
+                className="flex-1 bg-gray-100 dark:bg-gray-900 border-[1px] border-black/10 dark:border-white/10 rounded-[14px] px-[24px] py-[14px] text-[16px] text-black dark:text-white outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all placeholder:text-gray-600 dark:placeholder:text-gray-400"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -107,7 +107,7 @@ export default function Contact() {
                 type="email"
                 placeholder="Email Address"
                 required
-                className="flex-1 bg-gray-100 border-[1px] border-black/10 rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
+                className="flex-1 bg-gray-100 dark:bg-gray-900 border-[1px] border-black/10 dark:border-white/10 rounded-[14px] px-[24px] py-[14px] text-[16px] text-black dark:text-white outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all placeholder:text-gray-600 dark:placeholder:text-gray-400"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -117,14 +117,14 @@ export default function Contact() {
               name="message"
               placeholder="Write your Message"
               required
-              className="w-full bg-gray-100 border-[1px] border-black/10 rounded-[14px] px-[24px] py-[14px] text-[16px] h-[150px] outline-none focus:ring-2 focus:ring-black transition-all resize-none"
+              className="w-full bg-gray-100 dark:bg-gray-900 border-[1px] border-black/10 dark:border-white/10 rounded-[14px] px-[24px] py-[14px] text-[16px] text-black dark:text-white h-[150px] outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all resize-none placeholder:text-gray-600 dark:placeholder:text-gray-400"
               value={formData.message}
               onChange={handleChange}
             ></textarea>
             <button
               type="submit"
               disabled={isSubmitting}
-              className="bg-black relative text-white py-[14px] px-[24px] rounded-[14px] text-[16px] hover:opacity-90 duration-300 transition-all w-full disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-black dark:bg-white relative text-white dark:text-black py-[14px] px-[24px] rounded-[14px] text-[16px] hover:opacity-90 duration-300 transition-all w-full disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? "Sending..." : "Send Message"}
             </button>
