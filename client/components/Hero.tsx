@@ -1,6 +1,13 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Hero() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="w-full max-w-[53rem] p-6 flex flex-col pt-[150px] md:pt-[188px] pb-[2rem] md:pb-[3rem] px-[1.5rem] md:px-[8rem] items-start gap-[25px] mt-[40px]">
       <div className="animate-fade-in">
