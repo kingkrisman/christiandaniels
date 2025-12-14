@@ -72,17 +72,21 @@ export default function Projects() {
 
       {!loading && !error && projects.length > 0 && (
         <div className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              id={project.id.toString()}
-              title={project.name}
-              description={project.description || "No description provided"}
-              url={project.html_url}
-              language={project.language}
-              stars={project.stargazers_count}
-            />
-          ))}
+          {projects.map((project) => {
+            const screenshotUrl = `https://image.thum.io/get/png/width/400/crop/1200/${encodeURIComponent(project.html_url)}`;
+            return (
+              <ProjectCard
+                key={project.id}
+                id={project.id.toString()}
+                title={project.name}
+                description={project.description || "No description provided"}
+                url={project.html_url}
+                language={project.language}
+                stars={project.stargazers_count}
+                image={screenshotUrl}
+              />
+            );
+          })}
 
           <div className="col-span-1 md:col-span-2 w-full flex justify-center">
             <Link to="/projects">
