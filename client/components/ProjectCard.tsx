@@ -8,6 +8,7 @@ interface ProjectCardProps {
   url?: string;
   language?: string | null;
   stars?: number;
+  gradientClass?: string;
 }
 
 export default function ProjectCard({
