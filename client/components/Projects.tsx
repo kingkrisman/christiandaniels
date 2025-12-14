@@ -73,7 +73,7 @@ export default function Projects() {
       {!loading && !error && projects.length > 0 && (
         <div className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {projects.map((project) => {
-            const screenshotUrl = `https://image.thum.io/get/png/width/400/crop/1200/${encodeURIComponent(project.html_url)}`;
+            const screenshotUrl = `https://api.apiflash.com/v1/urltoimage?access_key=free&url=${encodeURIComponent(project.html_url)}&width=600&height=400`;
             return (
               <ProjectCard
                 key={project.id}
