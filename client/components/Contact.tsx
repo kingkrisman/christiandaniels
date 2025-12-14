@@ -49,7 +49,8 @@ export default function Contact() {
       } else {
         toast({
           title: "Error",
-          description: data.message || "Failed to send message. Please try again.",
+          description:
+            data.message || "Failed to send message. Please try again.",
         });
       }
     } catch (error) {
@@ -67,7 +68,10 @@ export default function Contact() {
 
   return (
     <>
-      <div className="w-full max-w-[53rem] flex flex-col items-start" id="contact">
+      <div
+        className="w-full max-w-[53rem] flex flex-col items-start"
+        id="contact"
+      >
         <div className="relative bg-black dark:bg-white px-[1rem] md:px-[5rem] py-[5rem] w-full transition-colors">
           <div className="relative z-10">
             <h2 className="text-[32px] font-bold tracking-tight leading-tight text-white dark:text-black text-center w-full mb-[16px] transition-colors">

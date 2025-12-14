@@ -21,7 +21,7 @@ export default function Projects() {
       try {
         setLoading(true);
         const response = await fetch(
-          "https://api.github.com/users/kingkrisman/starred"
+          "https://api.github.com/users/kingkrisman/starred",
         );
         if (!response.ok) {
           throw new Error(`GitHub API error: ${response.statusText}`);
@@ -31,7 +31,7 @@ export default function Projects() {
         setError(null);
       } catch (err) {
         setError(
-          err instanceof Error ? err.message : "Failed to fetch projects"
+          err instanceof Error ? err.message : "Failed to fetch projects",
         );
         setProjects([]);
       } finally {
@@ -52,7 +52,9 @@ export default function Projects() {
 
       {loading && (
         <div className="w-full text-center py-12">
-          <p className="text-gray-500 dark:text-gray-500">Loading projects...</p>
+          <p className="text-gray-500 dark:text-gray-500">
+            Loading projects...
+          </p>
         </div>
       )}
 
@@ -66,7 +68,9 @@ export default function Projects() {
 
       {!loading && !error && projects.length === 0 && (
         <div className="w-full text-center py-12">
-          <p className="text-gray-500 dark:text-gray-500">No starred projects found.</p>
+          <p className="text-gray-500 dark:text-gray-500">
+            No starred projects found.
+          </p>
         </div>
       )}
 
