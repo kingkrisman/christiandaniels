@@ -73,7 +73,17 @@ export default function Projects() {
       {!loading && !error && projects.length > 0 && (
         <div className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {projects.map((project) => {
-            const screenshotUrl = `https://cdn.microlink.io/?url=${encodeURIComponent(project.html_url)}&screenshot=true&type=png&width=600&height=400`;
+            const colors = [
+              "from-blue-500 to-blue-600",
+              "from-purple-500 to-purple-600",
+              "from-pink-500 to-pink-600",
+              "from-green-500 to-green-600",
+              "from-indigo-500 to-indigo-600",
+              "from-cyan-500 to-cyan-600",
+              "from-emerald-500 to-emerald-600",
+              "from-rose-500 to-rose-600",
+            ];
+            const colorClass = colors[project.id % colors.length];
             return (
               <ProjectCard
                 key={project.id}
@@ -83,7 +93,7 @@ export default function Projects() {
                 url={project.html_url}
                 language={project.language}
                 stars={project.stargazers_count}
-                image={screenshotUrl}
+                gradientClass={colorClass}
               />
             );
           })}
