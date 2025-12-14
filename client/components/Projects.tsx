@@ -84,6 +84,7 @@ export default function Projects() {
               "from-rose-500 to-rose-600",
             ];
             const colorClass = colors[project.id % colors.length];
+            const screenshotUrl = `/api/screenshot?url=${encodeURIComponent(project.html_url)}`;
             return (
               <ProjectCard
                 key={project.id}
@@ -93,6 +94,7 @@ export default function Projects() {
                 url={project.html_url}
                 language={project.language}
                 stars={project.stargazers_count}
+                image={screenshotUrl}
                 gradientClass={colorClass}
               />
             );
