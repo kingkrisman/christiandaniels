@@ -31,14 +31,14 @@ export default function Header() {
                 Home
               </span>
             </Link>
-            <div className="h-5 w-[1px] bg-zinc-200 md:mx-2"></div>
+            <div className="h-5 w-[1px] bg-zinc-200 dark:bg-zinc-800 md:mx-2"></div>
           </div>
 
           <div className="flex items-center">
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="p-[15px] hover:px-[20px] hover:mr-1 text-zinc-600 hover:text-zinc-900 relative group transition-all duration-300 hover:bg-gray-200/20 rounded-[15px]"
+              className="p-[15px] hover:px-[20px] hover:mr-1 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white relative group transition-all duration-300 hover:bg-gray-200/20 dark:hover:bg-white/10 rounded-[15px]"
               href="https://x.com"
               title="Twitter"
             >
