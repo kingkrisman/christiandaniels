@@ -21,13 +21,13 @@ export default function Hero() {
       </div>
 
       <div className="text-start">
-        <h1 className="text-[26px] md:text-[42px] font-bold tracking-tight leading-tight text-black mb-2">
+        <h1 className="text-[26px] md:text-[42px] font-bold tracking-tight leading-tight text-black dark:text-white mb-2 transition-colors">
           Hey, I'm Christian.
         </h1>
-        <h2 className="text-[26px] md:text-[42px] font-bold tracking-tight leading-tight text-black">
+        <h2 className="text-[26px] md:text-[42px] font-bold tracking-tight leading-tight text-black dark:text-white transition-colors">
           Software Engineer
         </h2>
-        <p className="text-[16px] text-gray-600 text-start mt-[25px]">
+        <p className="text-[16px] text-gray-600 dark:text-gray-400 text-start mt-[25px] transition-colors">
           Creating innovative solutions and captivating designs.
           <br />
           University student by day, visionary creator by night.
@@ -35,7 +35,10 @@ export default function Hero() {
       </div>
 
       <div className="flex gap-4 flex-wrap">
-        <button className="bg-black text-white py-[14px] px-[24px] rounded-[14px] text-[16px] hover:opacity-90 duration-300 transition-all hover:px-[28px]">
+        <button
+          onClick={scrollToContact}
+          className="bg-black dark:bg-white text-white dark:text-black py-[14px] px-[24px] rounded-[14px] text-[16px] hover:opacity-90 duration-300 transition-all hover:px-[28px]"
+        >
           Hire Me!
         </button>
         <div className="flex items-center rounded-[100px] text-[16px] gap-2 px-[24px] py-[14px] bg-green-100 text-green-700">
