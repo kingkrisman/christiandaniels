@@ -78,7 +78,7 @@ export default function ProjectCard({
           </div>
         )}
 
-        <button className="mt-5 bg-gray-100 hover:bg-gray-200 flex items-center rounded-[14px] px-[24px] py-[14px] text-[16px] font-normal text-black text-start no-underline transition-all duration-500 group">
+        <button className="mt-5 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center rounded-[14px] px-[24px] py-[14px] text-[16px] font-normal text-black dark:text-white text-start no-underline transition-all duration-500 group">
           <span className="flex items-center group-hover:pr-2 font-medium text-[15px] transition-all duration-300">
             View Project
           </span>
