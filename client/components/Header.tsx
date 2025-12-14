@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import { useTheme } from "./ThemeProvider";
 
 export default function Header() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="fixed top-[10px] md:top-[25px] w-full z-50 flex justify-center p-4">
-      <div className="liquidGlass-wrapper bg-white/50 rounded-[20px] border border-zinc-200 backdrop-blur-md">
+      <div className="liquidGlass-wrapper bg-white/50 dark:bg-black/30 rounded-[20px] border border-zinc-200 dark:border-zinc-800 backdrop-blur-md transition-colors">
         <nav className="liquidGlass-text flex items-center gap-1 p-[6px] relative z-10">
           <div className="flex items-center">
             <Link
