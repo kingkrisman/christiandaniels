@@ -33,7 +33,7 @@ export default function ProjectCard({
     >
       <div className="px-5 pt-5 pb-4 rounded-[20px] group">
         <div
-          className={`relative w-full h-[200px] border border-black/10 rounded-[20px] overflow-hidden flex items-center justify-center bg-gradient-to-br ${gradientClass || "from-slate-300 to-slate-400"}`}
+          className={`relative w-full h-[200px] border border-black/10 dark:border-white/10 rounded-[20px] overflow-hidden flex items-center justify-center bg-gradient-to-br ${gradientClass || "from-slate-300 to-slate-400"}`}
         >
           {image && (
             <img
@@ -54,17 +54,17 @@ export default function ProjectCard({
           </div>
         </div>
       </div>
-      <div className="px-7 pb-7">
-        <h3 className="text-[24px] font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 text-[16px] line-clamp-2">{description}</p>
+      <div className="px-7 pb-7 bg-white dark:bg-gray-900 transition-colors">
+        <h3 className="text-[24px] font-semibold mb-2 text-black dark:text-white transition-colors">{title}</h3>
+        <p className="text-gray-600 dark:text-gray-400 text-[16px] line-clamp-2 transition-colors">{description}</p>
 
         {(language || stars !== undefined) && (
           <div className="flex items-center gap-3 mt-3 mb-4">
             {language && (
-              <span className="text-sm text-gray-500">{language}</span>
+              <span className="text-sm text-gray-500 dark:text-gray-500">{language}</span>
             )}
             {stars !== undefined && (
-              <span className="flex items-center gap-1 text-sm text-gray-500">
+              <span className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-500">
                 <svg
                   className="w-4 h-4"
                   fill="currentColor"
