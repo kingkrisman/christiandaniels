@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <div className="w-full max-w-[53rem] p-6 flex flex-col py-[58px] px-[1.5rem] md:px-[8rem] items-center gap-[25px]">
-      <div className="w-full max-w-[53rem] py-[40px] flex flex-col items-center gap-[16px] border-t border-gray-300">
-        <p className="text-[14px] text-center text-gray-600">
+    <div className="w-full max-w-[53rem] p-6 flex flex-col py-[58px] px-[1.5rem] md:px-[8rem] items-center gap-[25px] bg-white dark:bg-black transition-colors">
+      <div className="w-full max-w-[53rem] py-[40px] flex flex-col items-center gap-[16px] border-t border-gray-300 dark:border-gray-800 transition-colors">
+        <p className="text-[14px] text-center text-gray-600 dark:text-gray-400 transition-colors">
           Copyright © 2025 Christian Daniels.
         </p>
         <div className="flex gap-6 py-1">
           <a
-            className="text-gray-600 cursor-pointer hover:text-black transition-all"
+            className="text-gray-600 dark:text-gray-400 cursor-pointer hover:text-black dark:hover:text-white transition-all"
             href="https://x.com/@honour_can_code"
             target="_blank"
             rel="noopener noreferrer"
