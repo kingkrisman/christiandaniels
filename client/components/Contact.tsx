@@ -70,10 +70,10 @@ export default function Contact() {
       <div className="w-full max-w-[53rem] flex flex-col items-start" id="contact">
         <div className="relative bg-black dark:bg-white px-[1rem] md:px-[5rem] py-[5rem] w-full transition-colors">
           <div className="relative z-10">
-            <h2 className="text-[32px] font-bold tracking-tight leading-tight text-white text-center w-full mb-[16px]">
+            <h2 className="text-[32px] font-bold tracking-tight leading-tight text-white dark:text-black text-center w-full mb-[16px] transition-colors">
               How Can I Help?
             </h2>
-            <p className="text-[18px] text-gray-400 text-center w-full mb-[40px]">
+            <p className="text-[18px] text-gray-400 dark:text-gray-600 text-center w-full mb-[40px] transition-colors">
               Let's turn your vision into something amazing.
             </p>
           </div>
