@@ -8,17 +8,17 @@ import Footer from "@/components/Footer";
 
 export default function Index() {
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-black transition-colors">
       <Header />
 
       <div className="fixed top-0 bottom-0 w-full pointer-events-none">
         <div className="relative mx-auto max-w-[53rem] h-full">
-          <div className="absolute left-0 top-0 h-screen w-[1px] bg-black/10"></div>
-          <div className="absolute right-0 top-0 h-screen w-[1px] bg-black/10"></div>
+          <div className="absolute left-0 top-0 h-screen w-[1px] bg-black/10 dark:bg-white/10"></div>
+          <div className="absolute right-0 top-0 h-screen w-[1px] bg-black/10 dark:bg-white/10"></div>
         </div>
       </div>
 
-      <main className="flex flex-col relative items-center mx-auto">
+      <main className="flex flex-col relative items-center mx-auto bg-white dark:bg-black">
         <Hero />
         <About />
         <Projects />
