@@ -33,27 +33,25 @@ export default function ProjectCard({
     >
       <div className="px-5 pt-5 pb-4 rounded-[20px] group">
         <div
-          className={`relative w-full h-[200px] border border-black/10 rounded-[20px] overflow-hidden flex items-center justify-center ${
-            image ? "bg-gradient-to-br from-slate-300 to-slate-400" : `bg-gradient-to-br ${gradientClass || "from-slate-300 to-slate-400"}`
-          }`}
+          className={`relative w-full h-[200px] border border-black/10 rounded-[20px] overflow-hidden flex items-center justify-center bg-gradient-to-br ${gradientClass || "from-slate-300 to-slate-400"}`}
         >
-          {image ? (
-            <div
-              className="w-full h-full"
-              style={{
-                backgroundImage: `url(${image})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
+          {image && (
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                // If image fails to load, hide it to show gradient
+                const imgElement = e.target as HTMLImageElement;
+                imgElement.style.display = "none";
               }}
-            ></div>
-          ) : (
-            <div className="text-center px-4">
-              <h4 className="text-white font-semibold text-lg line-clamp-3">
-                {title}
-              </h4>
-            </div>
+            />
           )}
+          <div className="text-center px-4 absolute inset-0 flex items-center justify-center">
+            <h4 className="text-white font-semibold text-lg line-clamp-3 drop-shadow-lg">
+              {title}
+            </h4>
+          </div>
         </div>
       </div>
       <div className="px-7 pb-7">
